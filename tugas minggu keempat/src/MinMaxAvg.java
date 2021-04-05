@@ -9,10 +9,10 @@ public class MinMaxAvg {
 
         System.out.print("Masukkan banyaknya data nilai = ");
         banyak = dataInput.nextInt();
-        int data[] = new int[banyak];
+        int[] data = new int[banyak];
 
         //input
-        for (int i = 0; i < banyak; i++){
+        for (int i = 0; i <data.length; i++){
             System.out.print("Masukkan data nilai ke-" + (i+1) + " = ");
             data[i] = dataInput.nextInt();
         }
@@ -32,10 +32,10 @@ public class MinMaxAvg {
         System.out.println("Nilai maximum = " + dataMax);
 
         //average
-        for (int i = 0; i < banyak; i++){
-            jumlah += data[i];
+        for (int i : data){
+            jumlah += i;
         }
-        average = jumlah / banyak;
+        average = jumlah / data.length;
         System.out.println("Nilai rata ratanya adalah = " + average);
     }
 }
