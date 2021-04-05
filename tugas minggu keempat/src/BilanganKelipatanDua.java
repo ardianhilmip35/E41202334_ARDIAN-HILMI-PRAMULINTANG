@@ -6,7 +6,7 @@ public class BilanganKelipatanDua {
         System.out.println("============================");
         int i = 1;
         do{
-            System.out.print(i + "   ");
+            System.out.print(i*2 + "   ");
             i ++;
         }while(i<=50);
 
