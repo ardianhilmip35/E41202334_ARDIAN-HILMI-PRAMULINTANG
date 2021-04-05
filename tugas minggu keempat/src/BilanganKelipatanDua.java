@@ -7,8 +7,8 @@ public class BilanganKelipatanDua {
         int i = 1;
         do{
             System.out.print(i + "   ");
-            i += i;
-        }while(i<=100);
+            i ++;
+        }while(i<=50);
 
     }
 }
